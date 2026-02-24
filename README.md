@@ -16,14 +16,14 @@ This project is an enhanced REST API for student management, built using the **G
 
 # 2. Setup & Run
 
-# Clone the repository
+### Clone the repository
 git clone https://github.com/NonnaritRammaneekultawat-6609650459/go-api-gin-lab.git
 cd go-api-gin-lab
 
-# Install dependencies
+### Install dependencies
 go mod tidy
 
-# Run the application
+### Run the application
 go run main.go
 
 #The server will start at http://localhost:8080
