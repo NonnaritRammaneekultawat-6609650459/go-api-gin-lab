@@ -56,7 +56,7 @@ go run main.go
   }
 * Expected Response: 201 Created
 
-# 2. Update Student Information (PUT)
+### 2. Update Student Information (PUT)
 * Endpoint: PUT http://localhost:8080/students/6609650459
 * Purpose: To test Update and Validation.
 * Request JSON Body:
@@ -68,7 +68,7 @@ go run main.go
   }
 * Expected Response: 200 OK
 
-# 3. Test Input Validation (Bad Request)
+### 3. Test Input Validation (Bad Request)
 * Endpoint: PUT http://localhost:8080/students/6609650459
 * Purpose: To verify that the API rejects invalid data (GPA > 4.00)
 * Request JSON Body:
@@ -84,12 +84,12 @@ go run main.go
   "error": "GPA must be between 0.00 and 4.00"
   }
 
-# 4. Delete Student (DELETE)
+### 4. Delete Student (DELETE)
 * Endpoint: DELETE http://localhost:8080/students/6609650459
 * Purpose: To test Delete
 * Expected Response: 204 No Content
 
-# 5. Test Not Found (404 Error)
+### 5. Test Not Found (404 Error)
 * Endpoint: GET http://localhost:8080/students/6609650459 (After deletion)
 * Purpose: To verify that the student was successfully removed and the API handles missing data.
 * Expected Response: 404 Not Found
