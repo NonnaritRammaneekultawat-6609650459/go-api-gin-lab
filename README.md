@@ -15,7 +15,7 @@ This project is an enhanced REST API for student management, built using the **G
 - SQLite3 (The database file `students.db` will be created automatically).
 
 ### 2. Setup & Run
-```bash
+
 # Clone the repository
 git clone <your-repository-url>
 cd go-api-gin-lab
@@ -28,7 +28,7 @@ go run main.go
 
 #The server will start at http://localhost:8080
 
-## API Endpoints
+### 3. API Endpoints
 Method,Endpoint,Description,Status Code (Success)
 GET,/students,Get all students,200 OK
 GET,/students/:id,Get student by ID,200 OK
@@ -36,7 +36,7 @@ POST,/students,Create a new student,201 Created
 PUT,/students/:id,Update student information,200 OK
 DELETE,/students/:id,Delete a student by ID,204 No Content
 
-### TEST Examples
+### 4. TEST Examples
 
 1. Create a Student (POST)
 Endpoint: POST http://localhost:8080/students
